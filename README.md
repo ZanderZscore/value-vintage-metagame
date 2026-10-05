@@ -10,7 +10,7 @@ linked public Moxfield decklists.
 
 Decks are considered part of the same archetype when they share at least:
 
-**20 mainboard nonland card slots**
+**25 mainboard nonland card slots**
 
 Copies count individually:
 
