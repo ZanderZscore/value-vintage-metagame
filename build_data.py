@@ -37,8 +37,8 @@ def parse_args():
     parser.add_argument(
         "--threshold",
         type=int,
-        default=25,
-        help="Shared nonland card-slot threshold (default: 25).",
+        default=20,
+        help="Shared nonland card-slot threshold (default: 20).",
     )
     parser.add_argument(
         "--refresh-decks",

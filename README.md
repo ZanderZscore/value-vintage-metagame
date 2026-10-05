@@ -10,7 +10,7 @@ linked public Moxfield decklists.
 
 Decks are considered part of the same archetype when they share at least:
 
-**25 mainboard nonland card slots**
+**20 mainboard nonland card slots**
 
 Copies count individually:
 
@@ -200,37 +200,11 @@ The entire archetype tile is clickable. Selecting the card opens that
 archetype's tournament-result detail view; there is no separate View decks
 button.
 
-## UI fixes
-
-- The default metagame window is now **90 days**.
-- The entire archetype card is a single HTML link, so clicking the image,
-  name, stats, or `View archetype →` opens the archetype page.
-- The selected time window is preserved when opening an archetype.
-- Deprecated Streamlit `use_container_width=True` calls were replaced with
-  `width="stretch"`.
 
 ## Preserved time window on back navigation
 
 Returning from an archetype detail page now preserves the active 30/60/90-day
 selection instead of resetting the metagame view.
-
-## More robust color naming
-
-Deck colors are now inferred from the **mainboard mana base**, not from every
-spell's color identity.
-
-This avoids false classifications such as treating a mono-blue High Tide deck
-as Izzet solely because it plays `Expansion // Explosion`.
-
-Color naming precedence is:
-
-1. consistent explicit submitted color labels (`UW`, `Rakdos`, `Mono Black`, etc.);
-2. actual colored mana support from mainboard lands;
-3. Moxfield deck-name prefixes;
-4. no inferred color when evidence is ambiguous.
-
-A color normally needs at least two supporting land slots and roughly 10% of
-the mana base to be included.
 
 
 ## Automatic weekly GitHub refresh
