@@ -3,6 +3,7 @@ import unittest
 from src.decks import is_land_type_line
 from src.clustering import shared_slots, build_similarity_matrix, transitive_clusters
 from src.profiles import parse_color_prefix, canonical_color_name, infer_raw_colors
+from src.vv_crawler import _parse_full_result_text, parse_record
 
 
 class CoreTests(unittest.TestCase):
@@ -105,6 +106,25 @@ class CoreTests(unittest.TestCase):
             path = Path(tmp) / "deck.json"
             path.write_text(json.dumps(payload), encoding="utf-8")
             self.assertEqual(infer_raw_colors(path), {"U", "R"})
+
+    def test_paper_result_without_player(self):
+        parsed = _parse_full_result_text("1st Burn (2-0)", "", 1)
+        self.assertEqual(parsed, (1, "", "2-0", "Burn"))
+
+    def test_paper_result_without_placement(self):
+        parsed = _parse_full_result_text("Benji L (2-0-1) Merfolk", "", 4)
+        self.assertEqual(parsed, (4, "Benji L", "2-0-1", "Merfolk"))
+
+    def test_colon_period_and_slash_record_formats(self):
+        self.assertEqual(
+            _parse_full_result_text("1st: Michael S. (4/0) Infect", "", 1),
+            (1, "Michael S.", "4/0", "Infect"),
+        )
+        self.assertEqual(
+            _parse_full_result_text("6th. Jacob W. (2/1/1) Gruul Mid", "", 1),
+            (6, "Jacob W.", "2/1/1", "Gruul Mid"),
+        )
+        self.assertEqual(parse_record("2/1/1"), (2, 1, 1))
 
 
 if __name__ == "__main__":

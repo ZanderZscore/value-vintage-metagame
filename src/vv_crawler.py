@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import csv
 import logging
+import random
 import re
 import time
 from dataclasses import asdict, dataclass
@@ -129,27 +130,83 @@ class VVCrawler:
     def __init__(
         self,
         *,
-        delay_seconds: float = 0.75,
+        delay_seconds: float = 3.0,
         timeout_seconds: float = 20.0,
-        max_retries: int = 3,
+        max_retries: int = 5,
     ) -> None:
         self.delay_seconds = delay_seconds
         self.timeout_seconds = timeout_seconds
         self.max_retries = max_retries
         self.session = requests.Session()
         self.session.headers.update({"User-Agent": DEFAULT_USER_AGENT})
+        self._last_request_at = 0.0
+
+    def _throttle(self) -> None:
+        """Keep all VV requests spaced out, regardless of caller."""
+        elapsed = time.monotonic() - self._last_request_at
+        wait = self.delay_seconds - elapsed
+        if wait > 0:
+            time.sleep(wait)
+        # A little jitter keeps scheduled jobs from hammering the site at a
+        # perfectly fixed cadence.
+        time.sleep(random.uniform(0.0, 1.0))
+
+    @staticmethod
+    def _retry_after_seconds(response: requests.Response) -> float | None:
+        value = response.headers.get("Retry-After")
+        if not value:
+            return None
+        try:
+            return max(0.0, float(value))
+        except ValueError:
+            return None
 
     def get_soup(self, url: str) -> BeautifulSoup:
         last_error = None
+
         for attempt in range(1, self.max_retries + 1):
+            self._throttle()
             try:
                 response = self.session.get(url, timeout=self.timeout_seconds)
+                self._last_request_at = time.monotonic()
+
+                if response.status_code == 429:
+                    retry_after = self._retry_after_seconds(response)
+                    if retry_after is None:
+                        retry_after = min(120.0, 30.0 * (2 ** (attempt - 1)))
+                    retry_after += random.uniform(0.0, 2.0)
+                    logging.warning(
+                        "VVMTG rate limited request to %s; waiting %.1fs "
+                        "before retry %d/%d",
+                        url,
+                        retry_after,
+                        attempt,
+                        self.max_retries,
+                    )
+                    last_error = requests.HTTPError(
+                        f"429 Too Many Requests for {url}",
+                        response=response,
+                    )
+                    if attempt < self.max_retries:
+                        time.sleep(retry_after)
+                        continue
+                    break
+
                 response.raise_for_status()
                 return BeautifulSoup(response.text, "html.parser")
+
             except requests.RequestException as exc:
                 last_error = exc
                 if attempt < self.max_retries:
-                    time.sleep(self.delay_seconds * attempt)
+                    backoff = min(60.0, self.delay_seconds * (2 ** attempt))
+                    logging.warning(
+                        "Request failed for %s (%s); retrying in %.1fs",
+                        url,
+                        exc,
+                        backoff,
+                    )
+                    time.sleep(backoff)
+
         raise RuntimeError(f"Failed to fetch {url}") from last_error
 
     @staticmethod
@@ -417,6 +474,78 @@ def preceding_result_prefix(anchor: Tag) -> str:
     return ""
 
 
+def _useful_anchor_text(anchor: Tag, deck_url: str) -> str:
+    text = clean_text(anchor.get_text(" ", strip=True))
+    if not text:
+        return ""
+    if text.startswith("http://") or text.startswith("https://"):
+        return ""
+    return text
+
+
+def _parse_full_result_text(
+    full_text: str,
+    anchor_archetype: str,
+    inferred_placement: int,
+):
+    """
+    Parse the result formats currently seen on VVMTG.
+
+    Supported examples:
+      1st Alice (3-1) Burn
+      1st Burn (2-0)                  # player omitted
+      Benji L (2-0-1) Merfolk         # placement omitted
+      1st: Alice (3/1) Burn
+      6th. Alice (2/1/1) Gruul Mid
+
+    If placement is omitted entirely, row order is used.
+    """
+    text = clean_text(full_text)
+
+    placement = None
+    placement_match = re.match(
+        r"^\s*(?P<placement>\d+)(?:st|nd|rd|th)?(?:\s*[.:\-–—])?\s+",
+        text,
+        re.IGNORECASE,
+    )
+    if placement_match:
+        placement = int(placement_match.group("placement"))
+        text = text[placement_match.end():].strip()
+
+    record_match = re.search(r"\((?P<record>[^()]*)\)", text)
+    if not record_match:
+        return None
+
+    before = clean_text(text[:record_match.start()])
+    record_raw = clean_text(record_match.group("record"))
+    after = clean_text(text[record_match.end():])
+
+    # Normal VV rows: player before record, archetype after it.
+    if after:
+        player = before
+        archetype = after
+    # Standard linked-archetype rows: the archetype is the anchor text, while
+    # the parent/prefix only contains placement, player, and record.
+    elif anchor_archetype:
+        player = before
+        archetype = anchor_archetype
+    # Some paper posts omit the player and put the archetype before the record,
+    # with the Moxfield URL as the anchor text.
+    elif placement is not None:
+        player = ""
+        archetype = before
+    else:
+        return None
+
+    if not archetype:
+        return None
+
+    if placement is None:
+        placement = inferred_placement
+
+    return placement, player, record_raw, archetype
+
+
 def parse_result_rows(
     soup: BeautifulSoup,
     *,
@@ -426,38 +555,62 @@ def parse_result_rows(
     event_category: str,
 ) -> list[TournamentResult]:
     results = []
+    next_inferred_placement = 1
 
     for anchor in soup.find_all("a", href=True):
         deck_url = urljoin(event_url, anchor["href"])
         if not is_moxfield_url(deck_url):
             continue
 
-        submitted_archetype = clean_text(anchor.get_text(" ", strip=True))
-        if not submitted_archetype:
-            continue
-
+        anchor_archetype = _useful_anchor_text(anchor, deck_url)
         prefix = preceding_result_prefix(anchor)
-        match = RESULT_PREFIX_RE.match(prefix)
+        parsed = None
 
-        if match is None:
+        # First keep the original, highly reliable linked-archetype format.
+        if anchor_archetype:
+            match = RESULT_PREFIX_RE.match(prefix)
+            if match is not None:
+                parsed = (
+                    int(match.group("placement")),
+                    clean_text(match.group("player")),
+                    clean_text(match.group("record")),
+                    anchor_archetype,
+                )
+
+        # Fall back to parsing the containing row. This handles paper-event
+        # posts where the Moxfield link text is the URL itself.
+        if parsed is None:
             parent = anchor.parent
             full_text = (
                 clean_text(parent.get_text(" ", strip=True))
                 if isinstance(parent, Tag)
                 else ""
             )
-            full_match = FULL_RESULT_RE.match(full_text)
-            if full_match is None:
-                logging.warning("Could not parse row: %r (%s)", full_text or prefix, deck_url)
-                continue
-            placement = int(full_match.group("placement"))
-            player = clean_text(full_match.group("player"))
-            record_raw = clean_text(full_match.group("record"))
-        else:
-            placement = int(match.group("placement"))
-            player = clean_text(match.group("player"))
-            record_raw = clean_text(match.group("record"))
+            anchor_text = clean_text(anchor.get_text(" ", strip=True))
+            if anchor_text.startswith("http://") or anchor_text.startswith("https://"):
+                full_text = clean_text(full_text.replace(anchor_text, "").replace("( )", ""))
+            parsed = _parse_full_result_text(
+                full_text or prefix,
+                anchor_archetype,
+                next_inferred_placement,
+            )
 
+        if parsed is None:
+            parent = anchor.parent
+            full_text = (
+                clean_text(parent.get_text(" ", strip=True))
+                if isinstance(parent, Tag)
+                else ""
+            )
+            logging.warning(
+                "Could not parse row: %r (%s)",
+                full_text or prefix,
+                deck_url,
+            )
+            continue
+
+        placement, player, record_raw, submitted_archetype = parsed
+        next_inferred_placement = max(next_inferred_placement, placement + 1)
         wins, losses, draws = parse_record(record_raw)
 
         results.append(
@@ -476,6 +629,7 @@ def parse_result_rows(
                 event_category=event_category,
             )
         )
+
     return results
 
 

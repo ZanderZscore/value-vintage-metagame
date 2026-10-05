@@ -1,164 +1,224 @@
 cluster_id,temporary_archetype_name,unique_deck_count,result_count,meta_percent,representative_deck_id,representative_deck_name,min_shared_slots,avg_shared_slots,max_shared_slots
-C001,High Tide,14,14,4.375,wGOgAfEolnCdfEmdr2fz2Q,tied by incidentall (finaldefiance) - MTGO Wednesday Weekly 9/2 7pm EST,26,34.81318681318681,42
-C002,Burn,11,11,3.4375,856fAYUean2tYQKVUFamjQ,burn by korbyn - Sunday MTGO 12pm EST,32,36.92727272727273,40
-C003,Rakdos Lurrus,9,9,2.8125,gGKgAeXVB3GytSUHjdm-UQ,Rakdos Lurrus by Rob D - MTGO Wednesday Weekly 9/2 7pm EST,21,27.36111111111111,39
-C004,Blue Post,9,9,2.8125,8kOfAdSCfn-pob-d0iQIvg,Blue Post 💧🗿 by DankConfidant - MTGO Wednesday Weekly,23,28.055555555555557,36
-C005,RW Energy,8,8,2.5,6EOfAfR3BXySDVEz6XbJgw,Boros Aggro by Duncan - MTGO Wednesday Weekly,20,26.214285714285715,39
-C006,Cephalid Breakfast,8,8,2.5,L8OfAY8_FH699UHVlFd2pw,Undermountain Breakfast by Sean - GreenGang - Sunday MTGO Weekly 12pm EST,20,29.107142857142858,37
-C007,RW Converter,7,7,2.1875,FLWfAWiWkX65fu4wy8m3zA,Lorehold Yard Sard by JasonJason - Thursday MTGO,20,29.238095238095237,37
-C008,Eldrazi Post,6,6,1.875,eAqgAWXJ_3ObuIcpJ0zvjg,E-Post by Secular Sam - Sunday Weekly MTGO Event,26,31.6,39
-C009,GW Initiative,5,5,1.5625,Qy-gAbbwxnuu2HHzyzOCzw,+5 Dex Mod (GW Initiative) by BadZelda32 - Sunday Weekly 12 PM MTGO Event,29,32.5,39
-C010,Hogaak Pox,5,5,1.5625,I5-fAQBHrXO2nVAizETOVw,Hogaak Pox by Ryan G - Sunday MTGO 12pm EST,29,34.4,40
-C011,Rack,5,5,1.5625,BUCgAVPr-36Q6wC5pBifpg,8 Rack by Rob D. - Wednesday MTGO Weekly 7 PM,22,26.8,37
-C012,Izzet Looting,5,5,1.5625,EUCgASlJ2XKXn3-kgLBoLQ,Izzet Looting by forkpapi - Wednesday MTGO Weekly 7 PM,21,30.1,42
-C013,Rhinos,5,5,1.5625,GYqfAdN2L3moqriO0C4b8g,Crashcade by Devfizzle - Wednesday MTGO Weekly,30,34.2,38
-C014,Affinity,5,5,1.5625,Yr-gAeBRg3GN0iLYu7-P4g,Affinity by Guthwine - MTGO Sunday Weekly 12 Noon EST,22,29.0,35
-C015,RB Scam,4,4,1.25,09OfAeijAnWCTovd_lEUmQ,Rakdos Scam by Bud1304 - MTGO Wednesday Weekly 7PM EST,22,26.5,36
-C016,Jeskai Legends,4,4,1.25,M_ifAZaSBX-U2LKswrh9Xw,jeskai legends by forkpapi - Mtgo Wednesday weekly 7pm EST,32,35.5,40
-C017,Goblins,4,4,1.25,XkWgARqu5XWLAyx90unLlQ,Goblin Storm by whiskey_fool - Thursday MTGO,32,34.333333333333336,41
-C018,Nulldrifter Control,4,4,1.25,GXefAYqjzne5z5zeG75_8g,UW nulldrifter control by Vacated Drake - MTGO Sunday weekly,24,26.0,28
-C019,Fluctuator,4,4,1.25,Ry-gAZa3N3mCkPlxGwMSXQ,Fluctuator by Doot - Sunday Weekly 12 PM MTGO Event,32,34.5,37
-C020,Mono White Midrange,4,4,1.25,fY2gAeSkP3uu-fBFlG0q-g,Mono W Midrange by wtnaut - Thursday MTGO,26,29.833333333333332,37
-C021,Mono Black Annex,4,4,1.25,SJugAd0qDH2NtfILsbhgjw,mono black by korbyn - Sunday 12 PM MTGO Weekly,22,27.833333333333332,37
-C022,Bant Nulldrifter Control,3,3,0.9375,9S6gAfDYKXWEPTR7Uvw9qQ,Bant Dread Not by Vacated Drake - Sunday Weekly 12 PM MTGO Event,21,26.0,29
-C023,Pyrogoyf Creativity,3,3,0.9375,4VafAWfCU3K6Cix3gOcP1A,Pyrogoyf Creativity by Doot - MTGO Weekend Weekly,25,28.333333333333332,35
-C024,Mono Black Midrange,3,3,0.9375,4nqfAXKMmXiINS8Gl9-WMA,Annex by startuprob - MTGO Sunday weekly,23,27.666666666666668,37
-C025,Combo Allies,3,3,0.9375,CXufAd79LHyPAbpJ6mqHGw,Combo Allies by DankConfidant - MTGO Sunday weekly,25,30.333333333333332,40
-C026,Dimir Shadow,3,3,0.9375,6IufAaVMZHOXjPlyL6GnVg,dimir shadow by Vacated Drake - Wednesday MTGO Weekly,22,27.0,36
-C027,Fleshraker Post,3,3,0.9375,_j-gAX3SWnSS2jPLBzIK0w,Frosted Rakes by ravensfanaustin/autocorrevt - Wednesday MTGO Weekly 7 PM,24,26.666666666666668,32
-C028,Breakfast Affinity,3,3,0.9375,B4yfAWPVe3e_OS9nDzYIlg,Full Metal Breakfast by blackviper - Wednesday MTGO Weekly,36,37.0,38
-C029,UW Vial Aggro,3,3,0.9375,I8OfAZnq03C77A1YIJq9Vw,uw vial by olozaur - Sunday MTGO Weekly 12pm EST,30,32.333333333333336,37
-C030,Energy Boom,3,3,0.9375,LfifAYIbrn6yAqrpHhFHIg,Energy Boom by Paul - EU Async league,29,29.0,29
-C031,Gruul Initiative,3,3,0.9375,TaygAd_p6H-Bfl5V_rFD-A,Gruul Initiative by Plasma (99LandOTK) - Wednesday 7 PM MTGO Weekly,30,32.666666666666664,38
-C032,UB Enchantments,2,2,0.625,3EOfAQ5YTHWExGrOoCXzSA,Dimir Estrid's by delgere_55483 - MTGO Wednesday Weekly,24,24.0,24
-C033,Meria Storm,2,2,0.625,4h-gAZMPuHaDT5iD9E-d_w,Meriadoxical Outcome by Foster - Webcam Thursday 8/19 7pm est,42,42.0,42
-C034,Mono White Taxes,2,2,0.625,4pqgASZZw3KItxX1pqEieA,Mono white taxes by Devfizzle - Sunday 12 PM MTGO Weekly,20,20.0,20
-C035,Naya Initiative,2,2,0.625,50KfAQ7beXuGXg6HUaXqQA,Naya Initiative by Rob D. - MTGO Wednesday Weekly,39,39.0,39
-C036,Rakdos Ares Initiative,2,2,0.625,6PefAV1gB3Sx_ANNMIBOOw,I am the god of war by korbyn - Mtgo Wednesday weekly 7pm EST,36,36.0,36
-C037,Mono Black Initiative,2,2,0.625,6XafAVSLVXqjWhmkIzL1WQ,Mono Black Initiative by arkna - MTGO Sunday weekly,27,27.0,27
-C038,Gitrog Combo,2,2,0.625,6mOgATuBFnW43HJzMjLy5g,Hot Bears Want To Meet by ToadBrews - MTGO Wednesday Weekly 9/2 7pm EST,27,27.0,27
-C039,Eldrazi Post,2,2,0.625,7EOfAdkyEXWVN75qdlhHbw,Lookout Post by Malcolm - MTGO Wednesday Weekly,23,23.0,23
-C040,Broodscale,2,2,0.625,7NOfAbxJcXGVNPk-80V_Qg,Broodscale by BanSurgical - MTGO Wednesday Weekly 7PM EST,22,22.0,22
-C041,Stick Burn,2,2,0.625,956fAQv77XWk-K6_upP3hw,Tinder Box (Stick Burn) by ServoToken - Sunday MTGO 12pm EST,20,20.0,20
-C042,RW Converter,2,2,0.625,96ugAWpY0nGX9OnPzGv8rQ,currency coating by jason.jason - Wednesday 7 PM MTGO Weekly,36,36.0,36
-C043,Restore Balance,2,2,0.625,BYyfATd1_Xeeh_rEpaGSqQ,Restore Balance by Haidle - Wednesday MTGO Weekly,46,46.0,46
-C044,Sultai Thopter Sword,2,2,0.625,CUWgAU-IxXiGyJ8uiFuAgA,Emry Boulder by Theo - Thursday MTGO,30,30.0,30
-C045,Hogaak Roots,2,2,0.625,D9SfAczrDnCIkyz3Go8cew,roots by miss_input - MTGO Wednesday Weekly 7PM EST,22,22.0,22
-C046,Lurrus Humans,2,2,0.625,DFefAcskEXy0A1FP-bo6kQ,Lurrus Humans by Ryan G - MTGO Weekend Weekly,25,25.0,25
-C047,Rakdos Skelementals,2,2,0.625,EJ-fAWc25HKwtnifdVK3NA,Rakdos Elementals by jukemate - Sunday MTGO 12pm EST,20,20.0,20
-C048,Gideon Prison,2,2,0.625,ENSfAfBfi3mKObYeuh8eWA,Gideon Prison by Plasma (99LandOTK) - MTGO Wednesday Weekly 7PM EST,38,38.0,38
-C049,Mono Black Asmo,2,2,0.625,GdSfAX8vM3-siSV2x_8jaA,asmo goyf by olozaur - MTGO Wednesday Weekly 7PM EST,41,41.0,41
-C050,Pyre Humans,2,2,0.625,GfifAQ0obHO-mP0LOq7T-g,Pyre Humans by Haidle - Mtgo Wednesday weekly 7pm EST,30,30.0,30
-C051,Slivers,2,2,0.625,HJ-fAVAtvXyeYsikFFri2Q,CoCo Slivers by Beta - Sunday MTGO 12pm EST,36,36.0,36
-C052,Green Midrange,2,2,0.625,Ip-fAd71lXexH-IRxoU4Sw,Primal Command by _west. - Sunday MTGO 12pm EST,28,28.0,28
-C053,RDW,2,2,0.625,N0CgAePfHHOJHCpBuLXihw,Red Monstrous Mice by EMoore117 - Wednesday MTGO Weekly 7 PM,21,21.0,21
-C054,Azorius Control,2,2,0.625,N2SgAa9KbXmX6oBps_96dg,UW Lotus Field Control by Vacated Drake - MTGO Wednesday Weekly 9/2 7pm EST,23,23.0,23
-C055,Doom Foretold,2,2,0.625,R0CgAdp7-nqYIj683dA9Ug,Orzhov Doom Foretold by Theycallmedub (orzhov pixie) - Wednesday MTGO Weekly 7 PM,34,34.0,34
-C056,Simic Oath,2,2,0.625,RGSgAQ4E5n-Iv9j15sR-3g,Angel Oath by Doot - MTGO Wednesday Weekly 9/2 7pm EST,22,22.0,22
-C057,Blue Spirits,2,2,0.625,SbWfAeSBfH2cUrXa_wcacw,Spirits by ServoToken - Thursday MTGO,37,37.0,37
-C058,Creative Technique,2,2,0.625,VC-gATSuwHu52-9dZ0hkDw,Mississippi River by Secular Sam - Sunday Weekly 12 PM MTGO Event,21,21.0,21
-C059,Dimir Control,2,2,0.625,Z9CgAbd233y28w9481zwAw,dimir control by olozaur - Wednesday 7PM MTGO Weekly,34,34.0,34
-C060,Jeskai Manufacturing,1,1,0.3125,-EKfAf6jLnOTbVgPpK_xvA,Jeskai Manufacturing by jxcvii - MTGO Wednesday Weekly,,,
-C061,Manabond,1,1,0.3125,1QqgAS1wHn2lHrT5pC5AoA,Powder Bond by BadZelda32 - Sunday Weekly MTGO Event,,,
-C062,Liquimetal Coating Ponza,1,1,0.3125,1YufAaCQl3S3ubbqzw1iAQ,Smash and Grab by ToadBrews - Wednesday MTGO Weekly,,,
-C063,Orzhov Lantern Control,1,1,0.3125,29OfAY0ZMn6tHZHYNrxOXQ,Will-o'-the-wisp No.2 by Sarah - EU Async league,,,
-C064,RG Initiative,1,1,0.3125,2tOfAYq0dHSiKlJjodh_lA,RG Stompy by Theo - MTGO Wednesday Weekly 7PM EST,,,
-C065,UR Discover,1,1,0.3125,3hmfAaY1gnuHYAJhgv3vjg,Izzet Appraiser by forkpapi - Best Async EU Value Vintage Tournament,,,
-C066,Mono Blue Spider Nest,1,1,0.3125,3vefASp2BnKj8P295fuRZg,Itsy Bitsy Spider by ToadBrews - Mtgo Wednesday weekly 7pm EST,,,
-C067,Grixis Mishra Tinker,1,1,0.3125,5D-gAYvx8nWXVCR4CmZQVg,Mish Mash by ToadBrews - Wednesday MTGO Weekly 7 PM,,,
-C068,Coin Flips,1,1,0.3125,7IufAUxPYXqE3VZKnFUPwQ,Red Gambling by jukemate - Wednesday MTGO Weekly,,,
-C069,Cephalid Breakfast,1,1,0.3125,7kOfAcJijn27kOavpthxHg,Birdless Breakfast by Plasma (99LandOTK) - MTGO Wednesday Weekly,,,
-C070,Primal Surge Combo,1,1,0.3125,80OfAff753u4c0SACv6RMA,the real oops by incidentall (finaldefiance) - MTGO Wednesday Weekly,,,
-C071,UB Shadow,1,1,0.3125,8Q2fAW1Yz3akYDCgEhg2ag,dimir shadow by sciluap - Best Async EU Value Vintage Tournament,,,
-C072,Boros Yojimbo,1,1,0.3125,8XqfATfZG36hkq_4SJw7Rw,Sticky Jimbo by ToadBrews - MTGO Sunday weekly,,,
-C073,Rakdos Maestro Combo,1,1,0.3125,8fefAQSwiH-E5lWJ69oyTA,maestro combo by olozaur - Mtgo Wednesday weekly 7pm EST,,,
-C074,Bow Combo,1,1,0.3125,9EOfAQdwKH2SXNZfkUoJww,Uninspired Bow by BrutonGaster (Travis) - MTGO Wednesday Weekly,,,
-C075,Amalia Combo,1,1,0.3125,Ab-gAU5m1XKT_b5vtfk9fw,Amalia by ServoToken - MTGO Sunday Weekly 12 Noon EST,,,
-C076,Naya Deserts Bello,1,1,0.3125,BYyfAe-Vl3mdpqfzAjIguw,Dimir Flash by pizzamaw50 - Wednesday MTGO Weekly,,,
-C077,Mono White Restoration of Eiganjo,1,1,0.3125,B_ifAdh_lXyBpDkfmB2pCQ,Mono White Midrange (Roadside Reliquary) by wtnaut - Mtgo Wednesday weekly 7pm EST,,,
-C078,Simic Food Affinity,1,1,0.3125,BnufASqgYXK8KXXupn4PfA,Hungry Hungry Hobbits by kinda4447 - MTGO Sunday weekly,,,
-C079,Scam Curses,1,1,0.3125,BnufAbmRJHyE7_nhMSto2A,Scam Curse by Novensiles/Czral - MTGO Sunday weekly,,,
-C080,Trickery Combo,1,1,0.3125,C4yfAYbn6nmTsle-bsXqYA,Oops All* Lands by Plasma (99LandOTK) - Wednesday MTGO Weekly,,,
-C081,Hawkeye’s Pizza,1,1,0.3125,CVefAea16H6a0Py1hLZTqA,Hawkeye's Pizza by zmyers94 - MTGO Weekend Weekly,,,
-C082,Coveted Maniac Combo,1,1,0.3125,Cp-fAV9fynS9RJHn8-IriA,Coveted Maniac by ravensfanaustin/autocorrevt - Sunday MTGO 12pm EST,,,
-C083,Sultai Stifle,1,1,0.3125,D9CgAVUubXS9mmrkA_S_rQ,BUG Stifle by BanSurgical - Wednesday 7PM MTGO Weekly,,,
-C084,Abzan Blink,1,1,0.3125,DPifAVTn_3i7srXpiwAJNw,Abzan Midrange by BanSurgical - Mtgo Wednesday weekly 7pm EST,,,
-C085,Trespasser’s Curse Midrange,1,1,0.3125,DYyfAZAn1HSdvd9aQTytTQ,Troll Toll by Novensiles/Czral - Wednesday MTGO Weekly,,,
-C086,Dimir Tempo Shadow,1,1,0.3125,DoyfAXwvzXGLEygi-AhvHA,Rush by Fan C Hands - Wednesday MTGO Weekly,,,
-C087,Orzhov Annex,1,1,0.3125,FQugAdIeqHWt6JXTS1BuCA,Demon Core Screwdriver by ToadBrews - Sunday Weekly MTGO Event,,,
-C088,Azorius Tempo,1,1,0.3125,FnufAZROaHu_qjQBqm4m8g,Azorius Tempo by Doot - MTGO Sunday weekly,,,
-C089,Broodscale Combo,1,1,0.3125,G72gAS0MKXiYXckGCSsb_w,Golgari Foodscale by forkpapi - MTGO Sunday Weekly 12 Noon EST,,,
-C090,Mono Black Aggro,1,1,0.3125,GHufAYQ-c3y5oI2DZ7o0Xw,Suicide Black by Beta - MTGO Sunday weekly,,,
-C091,Belcher,1,1,0.3125,GS-gAV9Mb3OveqMVEecd4A,Mono-Green Belcher by MoonTimeDweller - Sunday Weekly 12 PM MTGO Event,,,
-C092,BW Ketromose,1,1,0.3125,HMOfASi4iXiBN7972XrC7g,Orzhov Ketramose by Tom - Sunday MTGO Weekly 12pm EST,,,
-C093,Mono Green Stompy,1,1,0.3125,HMOfAadhUnKFuxyFaI3b6w,Mono Green Stompy by Jacob M - Sunday MTGO Weekly 12pm EST,,,
-C094,Bant Prison,1,1,0.3125,HNKfAT9NbHGqxoIgLzc5bg,Aquarium (fish prison) by ToadBrews - MTGO Wednesday Weekly 7PM EST,,,
-C095,RG Food Midrange,1,1,0.3125,INSfAf_3DHaAATMyp0unRw,Gruul Food Stompy by forkpapi - MTGO Wednesday Weekly 7PM EST,,,
-C096,GB Annex,1,1,0.3125,IkWgAaV_E3a_oDckjED14g,Fixer Rock by ToadBrews - Thursday MTGO,,,
-C097,Temur Ensoul,1,1,0.3125,J_ifAQZcrnipA2BVh9fRIw,Temur Ponza Scissors by ewanmoore - Mtgo Wednesday weekly 7pm EST,,,
-C098,Golgari Cosmogoyf,1,1,0.3125,J_ifAeX6vnKXyqFL2OCV8w,God's favorite idiot by blackviper - Mtgo Wednesday weekly 7pm EST,,,
-C099,Momo D&T,1,1,0.3125,Ki-gAV8xc3OeHahZTVZw-Q,Momo DnT by Guthwine - Sunday Weekly 12 PM MTGO Event,,,
-C100,RW Energy Midrange,1,1,0.3125,L9SfAbNDE36yL-HRsL8Bpw,Boros Energy Exile by EMoore117 - MTGO Wednesday Weekly 7PM EST,,,
-C101,UW Flash,1,1,0.3125,LEWgAf36Z3ma91TC4-1B8Q,Azorious Flash by delgere_55483 - Thursday MTGO,,,
-C102,Boros Control,1,1,0.3125,LGSgAU-lGHireQJwCFQAhg,Boros Control by Bud1304 - MTGO Wednesday Weekly 9/2 7pm EST,,,
-C103,Mono Black Aggro,1,1,0.3125,LLWfAd_Em3uSf5Pv5PIVZg,Void Aggro by ToadBrews - Thursday MTGO,,,
-C104,Blue Phoenix,1,1,0.3125,MPifAbRJW3qeMz5CGCtuyA,Blue Phoenix by Ryan G - Mtgo Wednesday weekly 7pm EST,,,
-C105,UW Slivers Control,1,1,0.3125,M_ifARvmDHOB7EODUieCUQ,Sliver RIP Field by pizzamaw50 - Mtgo Wednesday weekly 7pm EST,,,
-C106,Izzet Lessons,1,1,0.3125,MvifAdpCknK-DqftnibEXw,Izzet Lessons by ServoToken - Mtgo Wednesday weekly 7pm EST,,,
-C107,BW Momo,1,1,0.3125,N7WfAV4MGXal2Fu62NXIbw,Orzhov Momo by forkpapi - Thursday MTGO,,,
-C108,Blue White Spirits,1,1,0.3125,NWSgAfj0SX2PWfYLMcVTVQ,Monkey Business by Zonink - MTGO Wednesday Weekly 9/2 7pm EST,,,
-C109,5c Niv to Light,1,1,0.3125,OECgAYq1u32QmU_URXdYTA,5c Niv to Light by BIGCHEFCOOKEM - Wednesday MTGO Weekly 7 PM,,,
-C110,Sultai Graveyard,1,1,0.3125,OkOfAWXNQHuhzjFxDtlP0A,Burglin' Turts by ToadBrews - MTGO Wednesday Weekly,,,
-C111,Rakdos Donate,1,1,0.3125,PIufAbxKX3qFmf2UNteBLw,Rakdos Donate by BanSurgical - Wednesday MTGO Weekly,,,
-C112,RG Aggro,1,1,0.3125,PdOfASZm2HCz3GpMwFfaRg,Burn by Jake - MTGO Wednesday Weekly 7PM EST,,,
-C113,Eldrazi Post,1,1,0.3125,Pi-gAXFkhHaod5bdWLxXaw,https://moxfield.com/decks/D2eSSvQOFkyDa by blackviper - Sunday Weekly 12 PM MTGO Event,,,
-C114,Mono Black Aggro,1,1,0.3125,Qo2gAZe1THm7AtHuRLEYMw,Mono Black Aggro by Ariya - Thursday MTGO,,,
-C115,Reanimator,1,1,0.3125,R0CgAZs4zXueOL5wDXmd0w,Brutality Reborn by blackviper - Wednesday MTGO Weekly 7 PM,,,
-C116,Mono Black Aggro,1,1,0.3125,R0WgAQp7Gn-pZg8FzbJ3GA,Fork Socket Black by Guthwine - Thursday MTGO,,,
-C117,Mono Blue Dredge,1,1,0.3125,R2SgAbU9JH-kJoYlUj314g,Dredge by Haidle - MTGO Wednesday Weekly 9/2 7pm EST,,,
-C118,Mono Blue Terror,1,1,0.3125,TECgAZa2cXuK2CUKObkTxA,Blue Terror by AriyaIsTheBest - Wednesday MTGO Weekly 7 PM,,,
-C119,Gruul Equipment,1,1,0.3125,TgugAdZBo3yfgxhlLggyiA,Gruul Equipment by forkpapi - Sunday Weekly MTGO Event,,,
-C120,Dimir Nightmare,1,1,0.3125,U2SgAfE4dHuphQ8eUe1a9g,Threeanimate by TheOneTman - MTGO Wednesday Weekly 9/2 7pm EST,,,
-C121,Cephalid Breakfast,1,1,0.3125,UUWgAU0JpHyVkB9OO1OrOg,Neoform Breakfast by Plasma (99LandOTK) - Thursday MTGO,,,
-C122,5 Color Zuberas,1,1,0.3125,UpugAZcmzn2WxPBvvNcV7A,Zubera? In this economy? by zmyers94 - Sunday 12 PM MTGO Weekly,,,
-C123,Golgari Initiative,1,1,0.3125,UwugAYuY032KXbvJCUDGoA,Golgari Initiative by Sam - Sunday Weekly MTGO Event,,,
-C124,Goblin Storm,1,1,0.3125,VSCgAQKe63WQOZujZHplYA,Gravestorm by ravensfanaustin/autocorrevt - Webcam Thursday 8/19 7pm est,,,
-C125,Goblins,1,1,0.3125,W0WgAUK1HH6QgKJ1SnY7SQ,David Bowies strange children by Roby1Kenobi - Thursday MTGO,,,
-C126,UG Tempo,1,1,0.3125,WKygAY_N3nCGgYqEdNdXVA,Simic Tempo by Doot - Wednesday 7 PM MTGO Weekly,,,
-C127,RG Cascade,1,1,0.3125,WkWgAWezuX-nDpOQL-7B-A,im gambling by jason.jason - Thursday MTGO,,,
-C128,Mono Green Landfall,1,1,0.3125,X0WgAdpuE3eZ6tMWMoOj4w,landfall by olozaur - Thursday MTGO,,,
-C129,Red Post,1,1,0.3125,X5ugAXU_4nWUJS94LG4Xhg,Red Post by forkpapi - Sunday 12 PM MTGO Weekly,,,
-C130,Enchantress,1,1,0.3125,XC-gATmTSXq343p6VYRtjA,Enchantress by Haidle - Sunday Weekly 12 PM MTGO Event,,,
-C131,RW Legends,1,1,0.3125,XkWgAf5tk3CZGc4rU9Skbw,Mono Red Legends by forkpapi - Thursday MTGO,,,
-C132,Lessons,1,1,0.3125,YaygAeg1C3GNUN7x7CUYMQ,Izzet Lessons by Ariya - Wednesday 7 PM MTGO Weekly,,,
-C133,RDW,1,1,0.3125,YiGgAXOpuHGM2Zgn77jLEQ,WARMICE by YENSHIN - Webcam Thursday 8/19 7pm est,,,
-C134,Necroflux,1,1,0.3125,Z7-gAbfh3ne06nj8YaXokw,Necroflux by ToadBrews - MTGO Sunday Weekly 12 Noon EST,,,
-C135,Temur Control,1,1,0.3125,ZKygAbsbjnqrKvrr5Ob_YA,RUG Pull by ToadBrews - Wednesday 7 PM MTGO Weekly,,,
-C136,Lotus Field Combo,1,1,0.3125,ZvufAVz9E3SI1DNQvFl2Xg,Lotus Combo by cloudy - EU Async league,,,
-C137,Lich’s Mirror,1,1,0.3125,ZyGgAVJnkXGy8OXqgiCq1Q,Mirror!!! by Haidle - Webcam Thursday 8/19 7pm est,,,
-C138,Mono White Ascension,1,1,0.3125,_9OfAaDxlHeD03H5NgmOrg,Mono White Ascension by ServoToken - MTGO Wednesday Weekly 7PM EST,,,
-C139,Black Aggro,1,1,0.3125,_Z6fAaXu3H-CKGTyqFiwlw,Blaggro by Theo - Sunday MTGO 12pm EST,,,
-C140,Dimir Seas,1,1,0.3125,_p6fAdYAcXSEyC8r_QHpAQ,Seawalkers by ToadBrews - Sunday MTGO 12pm EST,,,
-C141,Temur Control,1,1,0.3125,_tOfAWfZLXKTHIX_5x_obQ,RUG Control by pizzamaw50 - MTGO Wednesday Weekly 7PM EST,,,
-C142,Grixis Annex,1,1,0.3125,aaygAXBR83KTpz-aSYrjSA,Mono Pink Devotion by FrogPapi - Wednesday 7 PM MTGO Weekly,,,
-C143,UW Control,1,1,0.3125,bKygAe6BznKFmfDft_XIdg,UW control by Vacated Drake - Wednesday 7 PM MTGO Weekly,,,
-C144,BW Midrange,1,1,0.3125,bqugAZMcpXm0p7wb4MDpPg,Orzhov ketra by Devfizzle - Wednesday 7 PM MTGO Weekly,,,
-C145,Show and Tell,1,1,0.3125,caygAZlt2XeCk83vzq_ZaQ,UB Big Robots by BrutonGaster (Travis) - Wednesday 7 PM MTGO Weekly,,,
-C146,Sultai Food,1,1,0.3125,e2OgAchjOnS2kwsclRaUjQ,BUG Asmo by BanSurgical - MTGO Wednesday Weekly 9/2 7pm EST,,,
-C147,RDW,1,1,0.3125,e6qgAR2s9HeRLRGgmvbzwg,Whack by Theo - Wednesday 7 PM MTGO Weekly,,,
-C148,Selesnya Convoke,1,1,0.3125,e9CgAbfJIXCycRGoo-AwAA,fallaji by wtnaut - Wednesday 7PM MTGO Weekly,,,
-C149,Glimpse Elves,1,1,0.3125,fLGgARroJX2p5WZBcH-g6g,What a Nice Wave by ravensfanaustin/autocorrevt - Thursday Webcam 7:30est,,,
-C150,Green Post,1,1,0.3125,gEOfAVSSL3CpFlPoBfwZxQ,Lands by quaintbird. - MTGO Wednesday Weekly,,,
-C151,Mono White Vial,1,1,0.3125,i_yfAUHpln2xNGxBtrV3Zg,Vial Wheenies by CapybaraHelpdesk (Ectobiologist) - EU Async league,,,
-C152,Oath of Druids,1,1,0.3125,nAqgAWnmEHefF5GyDfRB4Q,Verdant Oath by Destraschul - Sunday Weekly MTGO Event,,,
-C153,Azorius Bane,1,1,0.3125,pbGgAWs-pn-F5_y_yYUHBQ,UW energy by Rubycandy - Thursday Webcam 7:30est,,,
-C154,Bant Rec,1,1,0.3125,qxefAYQo1HSIIOeKmrBPIA,bant rec by paul - Best Async EU Value Vintage Tournament,,,
-C155,4c Pheldagriff,1,1,0.3125,rUOfARWNOHqlJ41YSfiMsw,Pheldagriff Toll by Novensiles/Czral - MTGO Wednesday Weekly,,,
-C156,Simic Infect,1,1,0.3125,sLGgAV0Hm3q5ArFzwd7G7g,AINT SCHNO THA HALF by YENSHIN! - Thursday Webcam 7:30est,,,
-C157,High Alert,1,1,0.3125,sj6gAY1UfX64n1nO63OZUg,High alert by Devfizzle117 - Wednesday MTGO Weekly 7 PM,,,
-C158,Mono Red Polymorph,1,1,0.3125,uByfAdec3X2dUVe2KwvcxA,Tablet Transmog by CapybaraHelpdesk (Ectobiologist) - Best Async EU Value Vintage Tournament,,,
-C159,GB Trudge,1,1,0.3125,uEGfAcEtJHKtKxJzJWKWpA,Trudge by Devfizzle - MTGO Wednesday Weekly,,,
-C160,Azorius Momo,1,1,0.3125,ugqgAd_p33G5MgOwvn2Dbg,Azorius Momo Scam/Tempo by EMoore117 - Sunday Weekly MTGO Event,,,
-C161,UB Control,1,1,0.3125,vB6fAam57HKmIPsbSjxs7w,Dimir Control by olozaur - Best Async EU Value Vintage Tournament,,,
-C162,Affinity,1,1,0.3125,x1afAXizQXuzBX9iG6kxHA,Doc Ock's affinity by blackviper - MTGO Weekend Weekly,,,
-C163,Delver,1,1,0.3125,z4ygAdPO7nCBbpSnGMCK-Q,Mono-Blue Tempo by TicTacTacos - Thursday MTGO,,,
+C001,RW Energy,42,48,7.523510971786834,BtSfASuqGHi8w27jXzhbJA,Stick Boros Energy by Doot - MTGO Wednesday Weekly 7PM EST,10,17.32404181184669,40
+C002,High Tide,23,24,3.761755485893417,1j8ZrpW9AU6Oqbxj3Hucdw,SCG Baltimore 2026 1k - Morgan B.,15,33.687747035573125,42
+C003,Burn,22,23,3.605015673981191,o5KgAZLMTHeYl-QsYuu-Rg,hills to climb and strength to climb them,20,33.97402597402598,42
+C004,Blue Post,20,21,3.29153605015674,G7-gAZj493m7nHAc27BBlg,$30 Blue Post (BnB 9/20/26),13,26.094736842105263,37
+C005,Hogaak Pox,19,19,2.9780564263322886,I5-fAQBHrXO2nVAizETOVw,Hogaak Pox by Ryan G - Sunday MTGO 12pm EST,8,26.92982456140351,41
+C006,RW Converter,18,18,2.8213166144200628,PAugAZaUNHOos09p7ZwYjw,Yale Sale by jason.jason - Sunday Weekly MTGO Event,11,21.92156862745098,38
+C007,Mono Black Annex,18,18,2.8213166144200628,SJugAd0qDH2NtfILsbhgjw,mono black by korbyn - Sunday 12 PM MTGO Weekly,6,19.58823529411765,37
+C008,UW Nulldrifter,15,16,2.5078369905956115,eBm_VjhHRkaUTeqyBgiNtg,SCG Baltimore 2026 1k - rileygent,5,19.34285714285714,36
+C012,Affinity,12,15,2.3510971786833856,IACgAZYoCneY4JLZTG9xiA,2026.09.05 Affinity,11,25.09090909090909,42
+C009,Eldrazi Post,13,13,2.0376175548589344,Q0CgAUiU2Hq-XNXNini5-A,E-Post by Secular Sam - Wednesday MTGO Weekly 7 PM,14,25.423076923076923,39
+C010,Hollow One,13,13,2.0376175548589344,FiTjp2daD0K3rLg7ELVyRA,30V Don't You Dare Go Hollow.,13,28.371794871794872,42
+C011,The Rack,12,12,1.8808777429467085,KS-gAYL1aHmSTEHxcBoyfQ,Rack by startuprob - Sunday Weekly 12 PM MTGO Event,14,22.272727272727273,37
+C013,Cephalid Breakfast,11,11,1.7241379310344827,Ui-gASiC9XqkMEzXse0T4w,Undermountain Breakfast by Sean - GreenGang - Sunday Weekly 12 PM MTGO Event,19,27.854545454545455,38
+C014,GW Initiative,9,10,1.567398119122257,-YufAag6BH-8SmHTiYdEfw,GW Initiative by Bud1304 - Wednesday MTGO Weekly,15,26.63888888888889,40
+C015,Fluctuator,9,9,1.4106583072100314,ApS0yVnXjkWWbnZZ9HipVQ,SCG Baltimore 2026 1k - nigeltastic,18,29.166666666666668,37
+C016,Goblins,7,8,1.2539184952978057,XkWgARqu5XWLAyx90unLlQ,Goblin Storm by whiskey_fool - Thursday MTGO,11,25.285714285714285,41
+C017,Infect,7,7,1.09717868338558,4vFNWhm0SUK_8z970qobng,YOU ALREADY SCHNO (9.13.26),21,28.142857142857142,43
+C018,Rhinos,7,7,1.09717868338558,GYqfAdN2L3moqriO0C4b8g,Crashcade by Devfizzle - Wednesday MTGO Weekly,26,31.761904761904763,38
+C019,Yojimbo Prison,6,7,1.09717868338558,d6-gAbtLyHWK_eRVAj4Bvg,"Yo, Jimbo V2",14,26.6,37
+C030,Pyre Humans,4,7,1.09717868338558,GfifAQ0obHO-mP0LOq7T-g,Pyre Humans by Haidle - Mtgo Wednesday weekly 7pm EST,27,31.333333333333332,35
+C020,Mono White Midrange,6,6,0.9404388714733543,fY2gAeSkP3uu-fBFlG0q-g,Mono W Midrange by wtnaut - Thursday MTGO,17,27.266666666666666,39
+C022,Merfolk,5,6,0.9404388714733543,YAagAUS1PXmqMBEIEeZGZw,2026.08.15 VV Merfolk,29,31.8,37
+C024,Blue Spirits,5,6,0.9404388714733543,SbWfAeSBfH2cUrXa_wcacw,Spirits by ServoToken - Thursday MTGO,14,22.0,37
+C021,RB Scam,5,5,0.7836990595611285,CYufAczLi3myrVc_MSVNfQ,Stick Scam by gorillajay - Wednesday MTGO Weekly,22,27.1,36
+C023,Dimir Shadow,5,5,0.7836990595611285,6IufAaVMZHOXjPlyL6GnVg,dimir shadow by Vacated Drake - Wednesday MTGO Weekly,14,23.0,36
+C025,RG Initiative,4,5,0.7836990595611285,2is8mBpLtkCnyUJdL-aA9Q,SCG Baltimore 2026 1k - Mitchell B.,20,29.5,39
+C046,Thopter Sword,3,5,0.7836990595611285,pD0cclbiC0ibHVXvzklJTg,Test Thopter Sword 8.8.26,17,23.0,30
+C065,Abzan Amalia,2,5,0.7836990595611285,Ab-gAU5m1XKT_b5vtfk9fw,Amalia by ServoToken - MTGO Sunday Weekly 12 Noon EST,23,23.0,23
+C026,Jeskai Legends,4,4,0.6269592476489029,M_ifAZaSBX-U2LKswrh9Xw,jeskai legends by forkpapi - Mtgo Wednesday weekly 7pm EST,32,35.5,40
+C027,Allies,4,4,0.6269592476489029,CXufAd79LHyPAbpJ6mqHGw,Combo Allies by DankConfidant - MTGO Sunday weekly,12,25.666666666666668,40
+C028,Breakfast Affinity,4,4,0.6269592476489029,8WOgAVyb3nKO2qjqEGMuAw,Affinity Breakfast by Drew Bat - MTGO Wednesday Weekly 9/2 7pm EST,19,28.833333333333332,38
+C029,Izzet Phoenix,4,4,0.6269592476489029,9Mh5RM7Rn06bco_hzxCONg,NYC Invitational Series VV Open - Connor D Izzet Phoenix,15,23.333333333333332,35
+C031,Leyline Mice,4,4,0.6269592476489029,WPVJCElb1EmOvKd3YRtm4Q,Mice Supremacy,21,26.0,32
+C032,Dimir Control,4,4,0.6269592476489029,Z9CgAbd233y28w9481zwAw,dimir control by olozaur - Wednesday 7PM MTGO Weekly,17,22.833333333333332,34
+C045,Red Prowess,3,4,0.6269592476489029,qGefAQ6P43K4767JG2Wu8g,ZC's Prowess,33,36.0,38
+C078,Nightmare Combo,2,4,0.6269592476489029,PlLWzPho1UKi059iOlUOFg,SCG Dallas 2026 1k - Persiden,38,38.0,38
+C033,Eldrazi Post,3,3,0.4702194357366771,KkyjLblrqUKgeeOCz78eMQ,NYC Invitational Series VV addiew Eldrazi Post,18,22.333333333333332,28
+C034,UB Enchantments,3,3,0.4702194357366771,TUCgAdmd9HmUT_RiXgq5XQ,Dimir Estrid's by delgere_55483 - Wednesday MTGO Weekly 7 PM,22,26.0,32
+C035,Discover Combo,3,3,0.4702194357366771,ImiHCpl440eW-GPP4jKTWw,Discover Combo,18,24.0,34
+C036,Pyrogoyf Creativity,3,3,0.4702194357366771,4VafAWfCU3K6Cix3gOcP1A,Pyrogoyf Creativity by Doot - MTGO Weekend Weekly,25,28.333333333333332,35
+C037,Meria Storm,3,3,0.4702194357366771,4h-gAZMPuHaDT5iD9E-d_w,Meriadoxical Outcome by Foster - Webcam Thursday 8/19 7pm est,42,42.0,42
+C038,Creative Technique,3,3,0.4702194357366771,5v-fAWjY6niFO5WrtACdTw,Creative Technique - Example List (duplicated from A_Balanced_Breakfast),21,23.333333333333332,28
+C039,Fleshraker Post,3,3,0.4702194357366771,_j-gAX3SWnSS2jPLBzIK0w,Frosted Rakes by ravensfanaustin/autocorrevt - Wednesday MTGO Weekly 7 PM,24,26.666666666666668,32
+C040,Mono Black Asmo,3,3,0.4702194357366771,GdSfAX8vM3-siSV2x_8jaA,asmo goyf by olozaur - MTGO Wednesday Weekly 7PM EST,27,31.666666666666668,41
+C041,Restore Balance,3,3,0.4702194357366771,BYyfATd1_Xeeh_rEpaGSqQ,Restore Balance by Haidle - Wednesday MTGO Weekly,24,32.0,46
+C042,Lurrus Humans,3,3,0.4702194357366771,W9GeAayNonWpN8Y9SyFC3w,30V Lurrus Humans,25,28.666666666666668,35
+C043,Primal Prayers,3,3,0.4702194357366771,DJfx8DQbIk2oapkx2k83zQ,Chthonian Prayers,30,32.0,36
+C044,UW Vial Aggro,3,3,0.4702194357366771,I8OfAZnq03C77A1YIJq9Vw,uw vial by olozaur - Sunday MTGO Weekly 12pm EST,30,32.333333333333336,37
+C047,Black White Pixie,3,3,0.4702194357366771,Y4igATcfL3W462sgcFzxsA,Orzhov Doom Foretold by BIGCHEFCOOKEM - Wednesday 7PM MTGO Weekly,34,35.0,37
+C048,Oath of Druids,3,3,0.4702194357366771,RGSgAQ4E5n-Iv9j15sR-3g,Angel Oath by Doot - MTGO Wednesday Weekly 9/2 7pm EST,16,19.333333333333332,22
+C049,Gruul Initiative,3,3,0.4702194357366771,TaygAd_p6H-Bfl5V_rFD-A,Gruul Initiative by Plasma (99LandOTK) - Wednesday 7 PM MTGO Weekly,30,32.666666666666664,38
+C050,Martyr,3,3,0.4702194357366771,yjh0fcw4AUuMKrsFxdz7RQ,SCG Baltimore 2026 1k - Fabian D.,25,29.333333333333332,36
+C063,Lich’s Mirror,2,3,0.4702194357366771,A9SeASK__HOy_yGMxK8teA,The last scholar of GOLB.,39,39.0,39
+C066,Sliver Control,2,3,0.4702194357366771,BujXRxHL00CqlF0yMzmDHQ,Sliver Control 30V 8/15,34,34.0,34
+C079,Manaless Dredge,2,3,0.4702194357366771,R2SgAbU9JH-kJoYlUj314g,Dredge by Haidle - MTGO Wednesday Weekly 9/2 7pm EST,24,24.0,24
+C051,Turbo Depths,2,2,0.31347962382445144,0vSBz8rCcUyomaVIBlrWaw,Value vintage lands,28,28.0,28
+C052,Wilderness Rec,2,2,0.31347962382445144,1tx3kLCB00WZLfgexJ7DmQ,Wait! You....I Remember You....In the Mountains,25,25.0,25
+C053,Gruul Ramp,2,2,0.31347962382445144,3cA5DHWVsky5iVsXzfy2lg,Gruul Ramp Creatures,26,26.0,26
+C054,Mono White Taxes,2,2,0.31347962382445144,4pqgASZZw3KItxX1pqEieA,Mono white taxes by Devfizzle - Sunday 12 PM MTGO Weekly,20,20.0,20
+C055,Devoted Druid,2,2,0.31347962382445144,5D_OYvA70kyWl_cc-lk75g,Adventurer Combo (most recent),39,39.0,39
+C056,Temur Energy,2,2,0.31347962382445144,5z8v8ex1KEiYa77xFlk2MQ,SCG Baltimore 2026 1k - Chris G.,36,36.0,36
+C057,Izzet Lessons,2,2,0.31347962382445144,62efARlbrnS10laVzfgvMg,LESSONS by ServoToken - Wednesday MTGO Weekly,38,38.0,38
+C058,Rakdos Ares Initiative,2,2,0.31347962382445144,6PefAV1gB3Sx_ANNMIBOOw,I am the god of war by korbyn - Mtgo Wednesday weekly 7pm EST,36,36.0,36
+C059,Gitrog Combo,2,2,0.31347962382445144,6mOgATuBFnW43HJzMjLy5g,Hot Bears Want To Meet by ToadBrews - MTGO Wednesday Weekly 9/2 7pm EST,27,27.0,27
+C060,Eldrazi Post,2,2,0.31347962382445144,7EOfAdkyEXWVN75qdlhHbw,Lookout Post by Malcolm - MTGO Wednesday Weekly,23,23.0,23
+C061,Broodscale,2,2,0.31347962382445144,7NOfAbxJcXGVNPk-80V_Qg,Broodscale by BanSurgical - MTGO Wednesday Weekly 7PM EST,22,22.0,22
+C062,Rosie Broodscale,2,2,0.31347962382445144,8KegAa6n23yODCXfB4fzaA,Value Vintage - Rosie Broodscale II-B,28,28.0,28
+C064,Cephalid Breakfast,2,2,0.31347962382445144,AGifAdntqXGvZfdis6Yy7A,Turbo Breakfast by Plasma (99LandOTK) - Wednesday MTGO Weekly,39,39.0,39
+C067,Sultai Thopter Sword,2,2,0.31347962382445144,CUWgAU-IxXiGyJ8uiFuAgA,Emry Boulder by Theo - Thursday MTGO,30,30.0,30
+C068,Green Stompy,2,2,0.31347962382445144,CoePJyIeOkGmXGCHgUTACg,Mono Green,27,27.0,27
+C069,Rakdos Skelementals,2,2,0.31347962382445144,EJ-fAWc25HKwtnifdVK3NA,Rakdos Elementals by jukemate - Sunday MTGO 12pm EST,20,20.0,20
+C070,Gideon Prison,2,2,0.31347962382445144,ENSfAfBfi3mKObYeuh8eWA,Gideon Prison by Plasma (99LandOTK) - MTGO Wednesday Weekly 7PM EST,38,38.0,38
+C071,Mono Black Aggro,2,2,0.31347962382445144,F4igAS5LCHCmNM8rHBv_WA,Mono Black Aggro by Ariya - Wednesday 7PM MTGO Weekly,34,34.0,34
+C072,Slivers,2,2,0.31347962382445144,HJ-fAVAtvXyeYsikFFri2Q,CoCo Slivers by Beta - Sunday MTGO 12pm EST,36,36.0,36
+C073,Green Midrange,2,2,0.31347962382445144,Ip-fAd71lXexH-IRxoU4Sw,Primal Command by _west. - Sunday MTGO 12pm EST,28,28.0,28
+C074,Elf Ball,2,2,0.31347962382445144,J7-eAZ29jHiWX4gf6L10PA,Haha I Love Elves,25,25.0,25
+C075,Boros Control,2,2,0.31347962382445144,LGSgAU-lGHireQJwCFQAhg,Boros Control by Bud1304 - MTGO Wednesday Weekly 9/2 7pm EST,27,27.0,27
+C076,UR Liquimetal Control,2,2,0.31347962382445144,LKygAQQ7QHiWSHujs6kkrA,Dark Brett (nefarious),25,25.0,25
+C077,RB Scam,2,2,0.31347962382445144,Lr73ipoMZE-rYIvh-m9NQQ,SCG Baltimore 2026 1k - Liam S.,37,37.0,37
+C080,RDW,2,2,0.31347962382445144,YiGgAXOpuHGM2Zgn77jLEQ,WARMICE by YENSHIN - Webcam Thursday 8/19 7pm est,42,42.0,42
+C089,Goblins,1,2,0.31347962382445144,3_ueAex5532efZjm8BBVPw,Boblins IRL,,,
+C106,Mono Black Midrange,1,2,0.31347962382445144,9HHF-n7IaUy06M2q0Efcsg,Bad Comedy,,,
+C117,Manabond,1,2,0.31347962382445144,DfjgHzJuNEyallRAsWO1LA,30V Bonder? I hardly know her?!,,,
+C144,Jeskai Energy,1,2,0.31347962382445144,OP5PKwOqIkypDjt4qMS58Q,Energy,,,
+C199,Boros Convoke,1,2,0.31347962382445144,jOgt8UVYL0eu1Te1aNCRig,Boros Convoke,,,
+C200,Bant Flash Control,1,2,0.31347962382445144,jayykL0bZUucj_p-lGULXw,Bant on your end step,,,
+C223,Sultai Reclamation,1,2,0.31347962382445144,zM9H5nHwZkW2gQdIkI9Hfw,VV Teachings Rec,,,
+C081,Jeskai Manufacturing,1,1,0.15673981191222572,-EKfAf6jLnOTbVgPpK_xvA,Jeskai Manufacturing by jxcvii - MTGO Wednesday Weekly,,,
+C082,Manabond,1,1,0.15673981191222572,1QqgAS1wHn2lHrT5pC5AoA,Powder Bond by BadZelda32 - Sunday Weekly MTGO Event,,,
+C083,Liquimetal Coating Ponza,1,1,0.15673981191222572,1YufAaCQl3S3ubbqzw1iAQ,Smash and Grab by ToadBrews - Wednesday MTGO Weekly,,,
+C084,Sultai Sunderflock,1,1,0.15673981191222572,1sPxoO2_L0KY_DBHxM9rdw,Changling VV,,,
+C085,Mono Blue Mill,1,1,0.15673981191222572,1uzhoi2BDUaKaThDVfyX6Q,NYC Invitational Series VV Open zfert Mono Blue Mill,,,
+C086,Orzhov Lantern Control,1,1,0.15673981191222572,29OfAY0ZMn6tHZHYNrxOXQ,Will-o'-the-wisp No.2 by Sarah - EU Async league,,,
+C087,Zoo,1,1,0.15673981191222572,2dlVYXBeWEqBQXuMKZF04w,SCG Baltimore 2026 1k - Legendteek,,,
+C088,Mono-W Enchantment Control,1,1,0.15673981191222572,3W2fAepADXa6zUKQoRZq9w,GSG VV Mono White Control 7-18-26,,,
+C090,Mono Blue Spider Nest,1,1,0.15673981191222572,3vefASp2BnKj8P295fuRZg,Itsy Bitsy Spider by ToadBrews - Mtgo Wednesday weekly 7pm EST,,,
+C091,Rokiric Midrange,1,1,0.15673981191222572,3yMph8p1Pk6MBv42vGNv7Q,Rokiric Midrange,,,
+C092,Prowess,1,1,0.15673981191222572,4oSfAeCUYXKxyfa1GSsZIg,Mono Blue Prowess,,,
+C093,BW D&T,1,1,0.15673981191222572,50-ca7Hybk-lWYyqTPfuAQ,SCG Dallas 2026 1k - John K.,,,
+C094,Grixis Mishra Tinker,1,1,0.15673981191222572,5D-gAYvx8nWXVCR4CmZQVg,Mish Mash by ToadBrews - Wednesday MTGO Weekly 7 PM,,,
+C095,UW Humans,1,1,0.15673981191222572,5nA4IlQCukCrMY9txTIP0A,SCG Dallas 2026 1k - zeklyn,,,
+C096,Mardu Converter,1,1,0.15673981191222572,6AbqWTHOREWF5yC0PyfSKw,marzipan,,,
+C097,Coin Flips,1,1,0.15673981191222572,7IufAUxPYXqE3VZKnFUPwQ,Red Gambling by jukemate - Wednesday MTGO Weekly,,,
+C098,Mono Blue Spellementals,1,1,0.15673981191222572,7Z4ZnRd_L0211gNQt59QQA,SCG Baltimore 2026 1k - Shoopman,,,
+C099,Cephalid Breakfast,1,1,0.15673981191222572,7kOfAcJijn27kOavpthxHg,Birdless Breakfast by Plasma (99LandOTK) - MTGO Wednesday Weekly,,,
+C100,Primal Surge Combo,1,1,0.15673981191222572,80OfAff753u4c0SACv6RMA,the real oops by incidentall (finaldefiance) - MTGO Wednesday Weekly,,,
+C101,Eldrazi Aggro,1,1,0.15673981191222572,8DkiiLs9kkWug0Jra__JIQ,Never Fight a Man With a Perm,,,
+C102,Thopter Depths,1,1,0.15673981191222572,8GefAbGxuXShmDC12hGizA,Dark Depths Thopter Sword by Doug L - Wednesday MTGO Weekly,,,
+C103,Rakdos Maestro Combo,1,1,0.15673981191222572,8fefAQSwiH-E5lWJ69oyTA,maestro combo by olozaur - Mtgo Wednesday weekly 7pm EST,,,
+C104,Jeskai Dragon Control,1,1,0.15673981191222572,9AiUJ9ANME-8rzk2td2j_g,NYC Invitational Series VV dragonslovetacos Jeskai Dragon Control,,,
+C105,Bow Combo,1,1,0.15673981191222572,9EOfAQdwKH2SXNZfkUoJww,Uninspired Bow by BrutonGaster (Travis) - MTGO Wednesday Weekly,,,
+C107,Naya Deserts Bello,1,1,0.15673981191222572,BYyfAe-Vl3mdpqfzAjIguw,Dimir Flash by pizzamaw50 - Wednesday MTGO Weekly,,,
+C108,Simic Food Affinity,1,1,0.15673981191222572,BnufASqgYXK8KXXupn4PfA,Hungry Hungry Hobbits by kinda4447 - MTGO Sunday weekly,,,
+C109,Scam Curses,1,1,0.15673981191222572,BnufAbmRJHyE7_nhMSto2A,Scam Curse by Novensiles/Czral - MTGO Sunday weekly,,,
+C110,Trickery Combo,1,1,0.15673981191222572,C4yfAYbn6nmTsle-bsXqYA,Oops All* Lands by Plasma (99LandOTK) - Wednesday MTGO Weekly,,,
+C111,Hawkeye’s Pizza,1,1,0.15673981191222572,CVefAea16H6a0Py1hLZTqA,Hawkeye's Pizza by zmyers94 - MTGO Weekend Weekly,,,
+C112,Coveted Maniac Combo,1,1,0.15673981191222572,Cp-fAV9fynS9RJHn8-IriA,Coveted Maniac by ravensfanaustin/autocorrevt - Sunday MTGO 12pm EST,,,
+C113,Sultai Stifle,1,1,0.15673981191222572,D9CgAVUubXS9mmrkA_S_rQ,BUG Stifle by BanSurgical - Wednesday 7PM MTGO Weekly,,,
+C114,5c Midrange,1,1,0.15673981191222572,DNCfASceonCgzTH74PuEew,5c Big Rainbow Loom,,,
+C115,Abzan Blink,1,1,0.15673981191222572,DPifAVTn_3i7srXpiwAJNw,Abzan Midrange by BanSurgical - Mtgo Wednesday weekly 7pm EST,,,
+C116,Trespasser’s Curse Midrange,1,1,0.15673981191222572,DYyfAZAn1HSdvd9aQTytTQ,Troll Toll by Novensiles/Czral - Wednesday MTGO Weekly,,,
+C118,Dimir Tempo Shadow,1,1,0.15673981191222572,DoyfAXwvzXGLEygi-AhvHA,Rush by Fan C Hands - Wednesday MTGO Weekly,,,
+C119,Ponza,1,1,0.15673981191222572,F4igAdd-lHaMiMr2OTs5Xw,Party Ponza by ToadBrews - Wednesday 7PM MTGO Weekly,,,
+C120,Orzhov Annex,1,1,0.15673981191222572,FQugAdIeqHWt6JXTS1BuCA,Demon Core Screwdriver by ToadBrews - Sunday Weekly MTGO Event,,,
+C121,Azorius Tempo,1,1,0.15673981191222572,FnufAZROaHu_qjQBqm4m8g,Azorius Tempo by Doot - MTGO Sunday weekly,,,
+C122,Jund Goyf,1,1,0.15673981191222572,FpPGEMCqmE-l9goO6T833A,Grindy Goyfs - VV Jund,,,
+C123,Doomsday,1,1,0.15673981191222572,FqjdLdAkf0OkgyHya1_fXQ,Value vintage doomsday,,,
+C124,Broodscale Combo,1,1,0.15673981191222572,G72gAS0MKXiYXckGCSsb_w,Golgari Foodscale by forkpapi - MTGO Sunday Weekly 12 Noon EST,,,
+C125,Mono Black Aggro,1,1,0.15673981191222572,GHufAYQ-c3y5oI2DZ7o0Xw,Suicide Black by Beta - MTGO Sunday weekly,,,
+C126,Black Post,1,1,0.15673981191222572,GIigARUW8nKVTOgk7JiM6Q,Black Post by forkpapi - Wednesday 7PM MTGO Weekly,,,
+C127,Belcher,1,1,0.15673981191222572,GS-gAV9Mb3OveqMVEecd4A,Mono-Green Belcher by MoonTimeDweller - Sunday Weekly 12 PM MTGO Event,,,
+C128,Rakdos Midrange,1,1,0.15673981191222572,HIigAUiBJnmZ2SC1R3tU-A,RB Gofy by rubycandy. - Wednesday 7PM MTGO Weekly,,,
+C129,BW Ketromose,1,1,0.15673981191222572,HMOfASi4iXiBN7972XrC7g,Orzhov Ketramose by Tom - Sunday MTGO Weekly 12pm EST,,,
+C130,Bant Prison,1,1,0.15673981191222572,HNKfAT9NbHGqxoIgLzc5bg,Aquarium (fish prison) by ToadBrews - MTGO Wednesday Weekly 7PM EST,,,
+C131,RG Food Midrange,1,1,0.15673981191222572,INSfAf_3DHaAATMyp0unRw,Gruul Food Stompy by forkpapi - MTGO Wednesday Weekly 7PM EST,,,
+C132,GB Annex,1,1,0.15673981191222572,IkWgAaV_E3a_oDckjED14g,Fixer Rock by ToadBrews - Thursday MTGO,,,
+C133,Bard Class,1,1,0.15673981191222572,J8XoIqQ1XkiAyrFHBCNnfw,Value Vintage - Bard Class Combo,,,
+C134,Temur Ensoul,1,1,0.15673981191222572,J_ifAQZcrnipA2BVh9fRIw,Temur Ponza Scissors by ewanmoore - Mtgo Wednesday weekly 7pm EST,,,
+C135,Golgari Cosmogoyf,1,1,0.15673981191222572,J_ifAeX6vnKXyqFL2OCV8w,God's favorite idiot by blackviper - Mtgo Wednesday weekly 7pm EST,,,
+C136,Momo D&T,1,1,0.15673981191222572,Ki-gAV8xc3OeHahZTVZw-Q,Momo DnT by Guthwine - Sunday Weekly 12 PM MTGO Event,,,
+C137,UW Flash,1,1,0.15673981191222572,LEWgAf36Z3ma91TC4-1B8Q,Azorious Flash by delgere_55483 - Thursday MTGO,,,
+C138,Mono Black Aggro,1,1,0.15673981191222572,LLWfAd_Em3uSf5Pv5PIVZg,Void Aggro by ToadBrews - Thursday MTGO,,,
+C139,Mono White Humans,1,1,0.15673981191222572,LvklLG2aMkGegB5rF8cF9A,SCG Baltimore 2026 1k - Jaiklay,,,
+C140,Izzet Delver,1,1,0.15673981191222572,MI-gAb98tXSQcuaxAOjUdQ,Izzet Delver by Pete L. - Stoup Brewing Seattle 9/12/26,,,
+C141,Sultai Stifle,1,1,0.15673981191222572,MYigAY7k23WJM31_md3QpQ,BUG Stifle by Plasma (99LandOTK) - Wednesday 7PM MTGO Weekly,,,
+C142,BW Momo,1,1,0.15673981191222572,N7WfAV4MGXal2Fu62NXIbw,Orzhov Momo by forkpapi - Thursday MTGO,,,
+C143,5c Niv to Light,1,1,0.15673981191222572,OECgAYq1u32QmU_URXdYTA,5c Niv to Light by BIGCHEFCOOKEM - Wednesday MTGO Weekly 7 PM,,,
+C145,Sultai Graveyard,1,1,0.15673981191222572,OkOfAWXNQHuhzjFxDtlP0A,Burglin' Turts by ToadBrews - MTGO Wednesday Weekly,,,
+C146,Rakdos Donate,1,1,0.15673981191222572,PIufAbxKX3qFmf2UNteBLw,Rakdos Donate by BanSurgical - Wednesday MTGO Weekly,,,
+C147,RG Aggro,1,1,0.15673981191222572,PdOfASZm2HCz3GpMwFfaRg,Burn by Jake - MTGO Wednesday Weekly 7PM EST,,,
+C148,Green Post,1,1,0.15673981191222572,QP_MihDZMEexNMtYsgW_MA,Some Posts Brew,,,
+C149,Reanimator,1,1,0.15673981191222572,R0CgAZs4zXueOL5wDXmd0w,Brutality Reborn by blackviper - Wednesday MTGO Weekly 7 PM,,,
+C150,Mono Black Aggro,1,1,0.15673981191222572,R0WgAQp7Gn-pZg8FzbJ3GA,Fork Socket Black by Guthwine - Thursday MTGO,,,
+C151,Mono Blue Terror,1,1,0.15673981191222572,TECgAZa2cXuK2CUKObkTxA,Blue Terror by AriyaIsTheBest - Wednesday MTGO Weekly 7 PM,,,
+C152,Wizards,1,1,0.15673981191222572,TQEvfwDUjEqWMY4K5aLMuA,SCG Baltimore 2026 1k - flowead,,,
+C153,Gruul Equipment,1,1,0.15673981191222572,TgugAdZBo3yfgxhlLggyiA,Gruul Equipment by forkpapi - Sunday Weekly MTGO Event,,,
+C154,Dimir Nightmare,1,1,0.15673981191222572,U2SgAfE4dHuphQ8eUe1a9g,Threeanimate by TheOneTman - MTGO Wednesday Weekly 9/2 7pm EST,,,
+C155,UB Tempo,1,1,0.15673981191222572,UCPuybEM5U-lnWTbWScq-Q,Not Quite My Tempo (Like the Whiplash Scene),,,
+C156,Dimir Bounce,1,1,0.15673981191222572,UFBDOforQEKM-trjZoMMIg,DIMIR LURRUS SELF BOUNCE,,,
+C157,5 Color Zuberas,1,1,0.15673981191222572,UpugAZcmzn2WxPBvvNcV7A,Zubera? In this economy? by zmyers94 - Sunday 12 PM MTGO Weekly,,,
+C158,Golgari Initiative,1,1,0.15673981191222572,UwugAYuY032KXbvJCUDGoA,Golgari Initiative by Sam - Sunday Weekly MTGO Event,,,
+C159,Goblin Storm,1,1,0.15673981191222572,VSCgAQKe63WQOZujZHplYA,Gravestorm by ravensfanaustin/autocorrevt - Webcam Thursday 8/19 7pm est,,,
+C160,Goblins,1,1,0.15673981191222572,W0WgAUK1HH6QgKJ1SnY7SQ,David Bowies strange children by Roby1Kenobi - Thursday MTGO,,,
+C161,Angel Vial,1,1,0.15673981191222572,W6GgAVa0DnqEhaVy49JYOw,VV - Angels,,,
+C162,UG Tempo,1,1,0.15673981191222572,WKygAY_N3nCGgYqEdNdXVA,Simic Tempo by Doot - Wednesday 7 PM MTGO Weekly,,,
+C163,Izzet Prowess,1,1,0.15673981191222572,WYoZUlKxaEC9TOGmTorH3w,Izzet Prowess,,,
+C164,RG Cascade,1,1,0.15673981191222572,WkWgAWezuX-nDpOQL-7B-A,im gambling by jason.jason - Thursday MTGO,,,
+C165,Mono Green Landfall,1,1,0.15673981191222572,X0WgAdpuE3eZ6tMWMoOj4w,landfall by olozaur - Thursday MTGO,,,
+C166,Red Post,1,1,0.15673981191222572,X5ugAXU_4nWUJS94LG4Xhg,Red Post by forkpapi - Sunday 12 PM MTGO Weekly,,,
+C167,Enchantress,1,1,0.15673981191222572,XC-gATmTSXq343p6VYRtjA,Enchantress by Haidle - Sunday Weekly 12 PM MTGO Event,,,
+C168,UR Spellementals,1,1,0.15673981191222572,XJt1dN7oXkmZn2PlXNEpQg,SCG Dallas 2026 1k - Corey H.,,,
+C169,RW Legends,1,1,0.15673981191222572,XkWgAf5tk3CZGc4rU9Skbw,Mono Red Legends by forkpapi - Thursday MTGO,,,
+C170,Wolves,1,1,0.15673981191222572,XtL0T16LPUyxweXOpNFiww,Wolves,,,
+C171,Lessons,1,1,0.15673981191222572,YaygAeg1C3GNUN7x7CUYMQ,Izzet Lessons by Ariya - Wednesday 7 PM MTGO Weekly,,,
+C172,Doomsday,1,1,0.15673981191222572,YhD7Eu8onEm727i20RIFgA,SCG Dallas 2026 1k - EriH34,,,
+C173,Primal Surge Trickery,1,1,0.15673981191222572,YmefAdgQY3K-6JjzBLlWNQ,oops all lands by incidentall (finaldefiance) - Wednesday MTGO Weekly,,,
+C174,Necroflux,1,1,0.15673981191222572,Z7-gAbfh3ne06nj8YaXokw,Necroflux by ToadBrews - MTGO Sunday Weekly 12 Noon EST,,,
+C175,Temur Control,1,1,0.15673981191222572,ZKygAbsbjnqrKvrr5Ob_YA,RUG Pull by ToadBrews - Wednesday 7 PM MTGO Weekly,,,
+C176,Lotus Field Combo,1,1,0.15673981191222572,ZvufAVz9E3SI1DNQvFl2Xg,Lotus Combo by cloudy - EU Async league,,,
+C177,Mardu Looting,1,1,0.15673981191222572,_2efAWZi33qm5r4ShdvF2g,Mardu Discard by pizzamaw50 - Wednesday MTGO Weekly,,,
+C178,Azorius Momo,1,1,0.15673981191222572,_2efAeu6fXCBBgcAQTrMQQ,Spirit Airlines by TheOneTman/ Bruton Gaster - Wednesday MTGO Weekly,,,
+C179,Mono White Ascension,1,1,0.15673981191222572,_9OfAaDxlHeD03H5NgmOrg,Mono White Ascension by ServoToken - MTGO Wednesday Weekly 7PM EST,,,
+C180,Black Aggro,1,1,0.15673981191222572,_Z6fAaXu3H-CKGTyqFiwlw,Blaggro by Theo - Sunday MTGO 12pm EST,,,
+C181,Dimir Seas,1,1,0.15673981191222572,_p6fAdYAcXSEyC8r_QHpAQ,Seawalkers by ToadBrews - Sunday MTGO 12pm EST,,,
+C182,Temur Control,1,1,0.15673981191222572,_tOfAWfZLXKTHIX_5x_obQ,RUG Control by pizzamaw50 - MTGO Wednesday Weekly 7PM EST,,,
+C183,Grixis Annex,1,1,0.15673981191222572,aaygAXBR83KTpz-aSYrjSA,Mono Pink Devotion by FrogPapi - Wednesday 7 PM MTGO Weekly,,,
+C184,Elemental Scam,1,1,0.15673981191222572,bDifAbbq032lVFzE5Sj1Dw,"My Name is Griefigo Furtoya. You Killed My Nadu, Prepare to Die.",,,
+C185,BW Midrange,1,1,0.15673981191222572,bqugAZMcpXm0p7wb4MDpPg,Orzhov ketra by Devfizzle - Wednesday 7 PM MTGO Weekly,,,
+C186,Show and Tell,1,1,0.15673981191222572,caygAZlt2XeCk83vzq_ZaQ,UB Big Robots by BrutonGaster (Travis) - Wednesday 7 PM MTGO Weekly,,,
+C187,Darksteel Reactor,1,1,0.15673981191222572,d-b806i03EiTnCOofdRytA,Value Vintage - Darksteel Reactor Post,,,
+C188,Domain,1,1,0.15673981191222572,d4ygARqbwnSfcD34bE17tg,Domain,,,
+C189,Sultai Food,1,1,0.15673981191222572,e2OgAchjOnS2kwsclRaUjQ,BUG Asmo by BanSurgical - MTGO Wednesday Weekly 9/2 7pm EST,,,
+C190,RDW,1,1,0.15673981191222572,e6qgAR2s9HeRLRGgmvbzwg,Whack by Theo - Wednesday 7 PM MTGO Weekly,,,
+C191,Selesnya Convoke,1,1,0.15673981191222572,e9CgAbfJIXCycRGoo-AwAA,fallaji by wtnaut - Wednesday 7PM MTGO Weekly,,,
+C192,Battle of Wits,1,1,0.15673981191222572,eWluOQF1l0mUe0f9852d3w,Never go in against a Sicilian when death is on the line!,,,
+C193,Selesnya Boggles,1,1,0.15673981191222572,gYuP-4MhsECCc62FsOh2ig,Slippery Boggle,,,
+C194,Jund,1,1,0.15673981191222572,i-wojm8WBUumOoEllPo5YQ,Jund Midrange,,,
+C195,Curse Post,1,1,0.15673981191222572,iSeT4JBt70W4XJjYQYcWiw,cursepost,,,
+C196,Azorius Lurrus Miracles,1,1,0.15673981191222572,iVOp0kl4C0G5rib-u5LWEw,NYC Invitational Series VV Open Forceofphil Azorius Lurrus Miracles,,,
+C197,Mono White Vial,1,1,0.15673981191222572,i_yfAUHpln2xNGxBtrV3Zg,Vial Wheenies by CapybaraHelpdesk (Ectobiologist) - EU Async league,,,
+C198,Mono Blue Tempo,1,1,0.15673981191222572,j4ZSXH1IfEGFqj2MOntroQ,$30 mono blue fearies,,,
+C201,Mono Black Lurrus,1,1,0.15673981191222572,krX0eGeq4k-jT9k5-s_3kw,SCG Dallas 2026 1k - TJSavage17,,,
+C202,Esper Pixie,1,1,0.15673981191222572,l_7uXrOvWEe181JZ5DKtvA,SCG Dallas 2026 1k - Speck030,,,
+C203,Azorius Cheerios,1,1,0.15673981191222572,myifAapHuH2DbDbOWnp3tg,Cheerios! Now with Grapes(hot),,,
+C204,Mono Blue Faeries,1,1,0.15673981191222572,nWefAcrvi3eczesXxxTf2g,Mono U Faeries by Sam D - Wednesday MTGO Weekly,,,
+C205,Miracles,1,1,0.15673981191222572,ok6fAe6Q-nCc5HST6IY4bw,Holly and Luyah V2 07/11/2026,,,
+C206,Azorius Bane,1,1,0.15673981191222572,pbGgAWs-pn-F5_y_yYUHBQ,UW energy by Rubycandy - Thursday Webcam 7:30est,,,
+C207,Gruul Eldrazi,1,1,0.15673981191222572,qJtLwMHylECaSZpMJYs-rg,Red Winter Is Coming!,,,
+C208,4c Pheldagriff,1,1,0.15673981191222572,rUOfARWNOHqlJ41YSfiMsw,Pheldagriff Toll by Novensiles/Czral - MTGO Wednesday Weekly,,,
+C209,High Alert,1,1,0.15673981191222572,sj6gAY1UfX64n1nO63OZUg,High alert by Devfizzle117 - Wednesday MTGO Weekly 7 PM,,,
+C210,Boros Control,1,1,0.15673981191222572,tDYopzkO50a0_XZqBV6AVg,Controlled Burn (GSG 7/18),,,
+C211,Show and Tell,1,1,0.15673981191222572,tj6gAdnAY3yQ5jlGzF1Uog,yuna tell - UnofficialPirate,,,
+C212,Mono Red Polymorph,1,1,0.15673981191222572,uByfAdec3X2dUVe2KwvcxA,Tablet Transmog by CapybaraHelpdesk (Ectobiologist) - Best Async EU Value Vintage Tournament,,,
+C213,Eldrazi Aggro,1,1,0.15673981191222572,uD6gARBggXWuGDGdqaluRQ,Eldrazi 2: Zendikar Drift - Serephor,,,
+C214,GB Trudge,1,1,0.15673981191222572,uEGfAcEtJHKtKxJzJWKWpA,Trudge by Devfizzle - MTGO Wednesday Weekly,,,
+C215,Mono White Death & Taxes,1,1,0.15673981191222572,uJegASqVWXGTDsnbN0bUxA,Death & Taxes by Joe M. - Stoup Brewing Seattle 9/12/26,,,
+C216,Bogles,1,1,0.15673981191222572,uLWzQ3VdGESxpzUyVLbUKQ,vvauras,,,
+C217,Mono White Control,1,1,0.15673981191222572,uZegAaZCEHasolrsIGe-OQ,Mono White Control by Will F. - Stoup Brewing Seattle 9/12/26,,,
+C218,Azorius Momo,1,1,0.15673981191222572,ugqgAd_p33G5MgOwvn2Dbg,Azorius Momo Scam/Tempo by EMoore117 - Sunday Weekly MTGO Event,,,
+C219,Azorius Control,1,1,0.15673981191222572,vGefAbevgneXtDIVgBhm4g,BlueWhite Control by swampsmtg - Wednesday MTGO Weekly,,,
+C220,Hogaak Depths,1,1,0.15673981191222572,wmefAZPsEnqm3hdaJRsw7A,Hogaak Depths by Bud1304 - Wednesday MTGO Weekly,,,
+C221,Metalwork Colossus,1,1,0.15673981191222572,x0619sU-U0y0gjaM6j1ncA,Vintage Colossus,,,
+C222,Delver,1,1,0.15673981191222572,z4ygAdPO7nCBbpSnGMCK-Q,Mono-Blue Tempo by TicTacTacos - Thursday MTGO,,,
