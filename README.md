@@ -24,7 +24,7 @@ shared = sum(
 All lands are excluded.
 
 Similarity is **not transitive**. Clustering uses complete-linkage, meaning
-every pair of decks within a cluster must independently meet the 25-card
+every pair of decks within a cluster must independently meet the 20-card
 threshold.
 
 ## App behavior
