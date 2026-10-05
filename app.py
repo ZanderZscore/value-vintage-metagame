@@ -506,7 +506,7 @@ def main():
             days = 90
 
         st.caption(
-            "25 shared mainboard nonland card slots. "
+            "20 shared mainboard nonland card slots. "
             "Copies count individually; clustering is non-transitive."
         )
 
