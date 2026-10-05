@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+.streamlit/secrets.toml
+
+# Cache-only data; persisted in GitHub Actions cache instead of Git.
+data/decklists_raw/
+data/card_cache.json
