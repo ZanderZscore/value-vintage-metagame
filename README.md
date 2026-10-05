@@ -80,7 +80,7 @@ Moxfield deck fetch + raw cache
 mainboard / nonland normalization
             |
             v
-25-slot complete-link clustering
+20-slot complete-link clustering
             |
             v
 archetype naming + signature cards
