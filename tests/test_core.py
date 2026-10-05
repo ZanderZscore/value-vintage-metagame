@@ -1,7 +1,7 @@
 import unittest
 
 from src.decks import is_land_type_line
-from src.clustering import shared_slots, build_similarity_matrix, complete_link_clusters
+from src.clustering import shared_slots, build_similarity_matrix, transitive_clusters
 from src.profiles import parse_color_prefix, canonical_color_name, infer_raw_colors
 
 
@@ -16,15 +16,16 @@ class CoreTests(unittest.TestCase):
         b = {"Bolt": 4, "Brainstorm": 3, "Ponder": 4}
         self.assertEqual(shared_slots(a, b), 10)
 
-    def test_nontransitive_clustering(self):
+    def test_transitive_clustering(self):
         decks = {
             "A": {"nonlands": {"x": 2}},
             "B": {"nonlands": {"x": 2, "y": 2}},
             "C": {"nonlands": {"y": 2}},
         }
         sims = build_similarity_matrix(decks)
-        clusters = complete_link_clusters(decks.keys(), sims, threshold=2)
-        self.assertEqual(sorted(map(len, clusters)), [1, 2])
+        clusters = transitive_clusters(decks.keys(), sims, threshold=2)
+        self.assertEqual(len(clusters), 1)
+        self.assertEqual(clusters[0], frozenset({"A", "B", "C"}))
 
     def test_color_alias(self):
         colors, stem = parse_color_prefix("UW Affinity")

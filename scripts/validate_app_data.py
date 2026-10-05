@@ -13,8 +13,8 @@ REQUIRED = [
     APP_DATA / "archetype_profiles.csv",
     APP_DATA / "archetype_profiles.json",
     APP_DATA / "deck_results.csv",
-    APP_DATA / "vv_online_results.csv",
-    DATA / "vv_online_results.csv",
+    APP_DATA / "vv_results.csv",
+    DATA / "vv_results.csv",
     DATA / "decks_normalized.json",
     DATA / "deck_cards.csv",
     DATA / "clustering" / "clusters.csv",
@@ -40,14 +40,14 @@ def main() -> None:
 
     profiles = read_csv(APP_DATA / "archetype_profiles.csv")
     results = read_csv(APP_DATA / "deck_results.csv")
-    raw_results = read_csv(APP_DATA / "vv_online_results.csv")
+    raw_results = read_csv(APP_DATA / "vv_results.csv")
 
     if not profiles:
         raise SystemExit("archetype_profiles.csv is empty")
     if not results:
         raise SystemExit("deck_results.csv is empty")
     if not raw_results:
-        raise SystemExit("vv_online_results.csv is empty")
+        raise SystemExit("vv_results.csv is empty")
 
     profile_ids = {row["cluster_id"] for row in profiles}
     result_ids = {row["cluster_id"] for row in results}
@@ -61,6 +61,7 @@ def main() -> None:
 
     required_result_fields = {
         "event_date",
+        "event_category",
         "event_name",
         "placement",
         "player",

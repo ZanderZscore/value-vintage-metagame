@@ -310,7 +310,7 @@ def render_home(profiles, all_results, days):
     if as_of:
         st.markdown(
             f'<div class="vv-subtitle">'
-            f'Online tournaments · Last {days} days · '
+            f'Online + paper + premier events · Last {days} days · '
             f'Through {as_of.strftime("%B %-d, %Y")}'
             f'</div>',
             unsafe_allow_html=True,
@@ -404,6 +404,7 @@ def render_archetype(profiles, all_results, days, cluster_id):
     display = rows[
         [
             "event_date",
+            "event_category",
             "event_name",
             "placement",
             "player",
@@ -415,6 +416,7 @@ def render_archetype(profiles, all_results, days, cluster_id):
     ].rename(
         columns={
             "event_date": "Date",
+            "event_category": "Type",
             "event_name": "Event",
             "placement": "Place",
             "player": "Player",
@@ -434,6 +436,10 @@ def render_archetype(profiles, all_results, days, cluster_id):
             "Date": st.column_config.DateColumn(
                 "Date",
                 format="MMM D, YYYY",
+                width="small",
+            ),
+            "Type": st.column_config.TextColumn(
+                "Type",
                 width="small",
             ),
             "Event": st.column_config.TextColumn(
@@ -507,7 +513,7 @@ def main():
 
         st.caption(
             "20 shared mainboard nonland card slots. "
-            "Copies count individually; clustering is non-transitive."
+            "Copies count individually; clustering is transitive."
         )
 
     cluster_id = st.query_params.get("archetype")

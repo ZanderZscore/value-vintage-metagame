@@ -14,7 +14,11 @@ import requests
 from bs4 import BeautifulSoup, Tag
 
 BASE_URL = "https://vvmtg.com"
-ONLINE_ARCHIVE_URL = f"{BASE_URL}/category/online-tournaments/"
+ARCHIVES = (
+    ("premier", f"{BASE_URL}/category/premier-events/"),
+    ("paper", f"{BASE_URL}/category/paper-events/"),
+    ("online", f"{BASE_URL}/category/online-tournaments/"),
+)
 DEFAULT_USER_AGENT = (
     "Mozilla/5.0 (compatible; ValueVintageMetagameCrawler/1.0; "
     "+https://vvmtg.com/)"
@@ -73,6 +77,7 @@ class TournamentResult:
     record_raw: str
     submitted_archetype: str
     deck_url: str
+    event_category: str
     source: str = "vvmtg"
 
 
@@ -88,6 +93,7 @@ CSV_FIELDS = [
     "record_raw",
     "submitted_archetype",
     "deck_url",
+    "event_category",
     "source",
 ]
 
@@ -147,24 +153,32 @@ class VVCrawler:
         raise RuntimeError(f"Failed to fetch {url}") from last_error
 
     @staticmethod
-    def archive_page_url(page_number: int) -> str:
-        return ONLINE_ARCHIVE_URL if page_number == 1 else f"{ONLINE_ARCHIVE_URL}page/{page_number}/"
+    def archive_page_url(archive_url: str, page_number: int) -> str:
+        return archive_url if page_number == 1 else f"{archive_url}page/{page_number}/"
 
-    def iter_event_urls(
+    def iter_archive_event_urls(
         self,
+        archive_name: str,
+        archive_url: str,
         *,
         cutoff_date: date | None = None,
         max_pages: int | None = None,
-    ) -> Iterable[str]:
-        seen: set[str] = set()
+    ) -> Iterable[tuple[str, str]]:
+        """
+        Yield (event_url, event_category) from one VV archive.
+
+        ARCHIVES is ordered premier -> paper -> online. The top-level crawl
+        deduplicates event URLs across archives, so a premier event that also
+        appears under Paper Events is classified as premier and counted once.
+        """
         page_number = 1
 
         while True:
             if max_pages is not None and page_number > max_pages:
                 return
 
-            url = self.archive_page_url(page_number)
-            logging.info("Archive page %d: %s", page_number, url)
+            url = self.archive_page_url(archive_url, page_number)
+            logging.info("%s archive page %d: %s", archive_name, page_number, url)
             soup = self.get_soup(url)
             entries = find_archive_entries(soup)
             if not entries:
@@ -172,18 +186,15 @@ class VVCrawler:
 
             dated = 0
             in_range = 0
-            for event_url, posted_date in entries:
-                if event_url in seen:
-                    continue
-                seen.add(event_url)
 
+            for event_url, posted_date in entries:
                 if posted_date is not None:
                     dated += 1
                     if cutoff_date and posted_date < cutoff_date:
                         continue
 
                 in_range += 1
-                yield event_url
+                yield event_url, archive_name
 
             if cutoff_date and dated and in_range == 0:
                 return
@@ -194,18 +205,51 @@ class VVCrawler:
             page_number += 1
             time.sleep(self.delay_seconds)
 
-    def parse_event(self, event_url: str) -> list[TournamentResult]:
+    def iter_event_urls(
+        self,
+        *,
+        cutoff_date: date | None = None,
+        max_pages: int | None = None,
+    ) -> Iterable[tuple[str, str]]:
+        seen: set[str] = set()
+
+        for archive_name, archive_url in ARCHIVES:
+            for event_url, event_category in self.iter_archive_event_urls(
+                archive_name,
+                archive_url,
+                cutoff_date=cutoff_date,
+                max_pages=max_pages,
+            ):
+                if event_url in seen:
+                    continue
+
+                seen.add(event_url)
+                yield event_url, event_category
+
+    def parse_event(
+        self,
+        event_url: str,
+        event_category: str,
+    ) -> list[TournamentResult]:
         soup = self.get_soup(event_url)
         event_name = parse_event_name(soup)
         event_date = parse_event_date(soup)
         event_date_str = event_date.isoformat() if event_date else ""
+
         rows = parse_result_rows(
             soup,
             event_date=event_date_str,
             event_name=event_name,
             event_url=event_url,
+            event_category=event_category,
         )
-        logging.info("Parsed %d decks from %s", len(rows), event_name)
+
+        logging.info(
+            "Parsed %d decks from %s [%s]",
+            len(rows),
+            event_name,
+            event_category,
+        )
         return rows
 
     def crawl(
@@ -215,12 +259,13 @@ class VVCrawler:
         max_pages: int | None = None,
     ) -> list[TournamentResult]:
         rows: list[TournamentResult] = []
-        for event_url in self.iter_event_urls(
+
+        for event_url, event_category in self.iter_event_urls(
             cutoff_date=cutoff_date,
             max_pages=max_pages,
         ):
             try:
-                event_rows = self.parse_event(event_url)
+                event_rows = self.parse_event(event_url, event_category)
             except Exception:
                 logging.exception("Failed to parse event: %s", event_url)
                 continue
@@ -378,6 +423,7 @@ def parse_result_rows(
     event_date: str,
     event_name: str,
     event_url: str,
+    event_category: str,
 ) -> list[TournamentResult]:
     results = []
 
@@ -427,6 +473,7 @@ def parse_result_rows(
                 record_raw=record_raw,
                 submitted_archetype=submitted_archetype,
                 deck_url=deck_url,
+                event_category=event_category,
             )
         )
     return results

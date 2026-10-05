@@ -39,34 +39,50 @@ def sim(a, b, sims):
     return sims[(a, b) if a < b else (b, a)]
 
 
-def cross_stats(a, b, sims):
-    values = [sim(x, y, sims) for x in a for y in b]
-    return min(values), sum(values) / len(values)
+def transitive_clusters(deck_ids, sims, threshold=20):
+    """
+    Connected components of the >= threshold similarity graph.
 
+    Similarity is transitive for grouping:
+        A ~ B and B ~ C => A, B, C are one archetype,
+    even when A and C do not directly meet the threshold.
+    """
+    ids = sorted(deck_ids)
+    adjacency = {deck_id: set() for deck_id in ids}
 
-def complete_link_clusters(deck_ids, sims, threshold=25):
-    clusters = [frozenset([x]) for x in sorted(deck_ids)]
+    for (a, b), shared in sims.items():
+        if shared >= threshold:
+            adjacency[a].add(b)
+            adjacency[b].add(a)
 
-    while True:
-        candidates = []
-        for i in range(len(clusters)):
-            for j in range(i + 1, len(clusters)):
-                minimum, average = cross_stats(clusters[i], clusters[j], sims)
-                if minimum >= threshold:
-                    merged = tuple(sorted(clusters[i] | clusters[j]))
-                    candidates.append((minimum, average, len(merged), merged, i, j))
+    seen = set()
+    clusters = []
 
-        if not candidates:
-            break
+    for start_id in ids:
+        if start_id in seen:
+            continue
 
-        candidates.sort(key=lambda x: (-x[0], -x[1], -x[2], x[3]))
-        _, _, _, _, i, j = candidates[0]
-        merged = clusters[i] | clusters[j]
-        clusters = [c for k, c in enumerate(clusters) if k not in {i, j}]
-        clusters.append(merged)
-        clusters.sort(key=lambda c: tuple(sorted(c)))
+        stack = [start_id]
+        component = set()
 
-    return sorted(clusters, key=lambda c: (-len(c), tuple(sorted(c))))
+        while stack:
+            current = stack.pop()
+            if current in seen:
+                continue
+
+            seen.add(current)
+            component.add(current)
+
+            for neighbor in sorted(adjacency[current], reverse=True):
+                if neighbor not in seen:
+                    stack.append(neighbor)
+
+        clusters.append(frozenset(component))
+
+    return sorted(
+        clusters,
+        key=lambda c: (-len(c), tuple(sorted(c))),
+    )
 
 
 def representative_deck(cluster, sims):
@@ -109,12 +125,12 @@ def cluster_all(
     results_csv: Path,
     *,
     output_dir: Path,
-    threshold: int = 25,
+    threshold: int = 20,
 ):
     decks = json.loads(decks_json.read_text(encoding="utf-8"))
     rows = read_results(results_csv)
     sims = build_similarity_matrix(decks)
-    clusters = complete_link_clusters(decks.keys(), sims, threshold=threshold)
+    clusters = transitive_clusters(decks.keys(), sims, threshold=threshold)
 
     cluster_ids = {}
     representatives = {}

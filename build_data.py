@@ -20,7 +20,7 @@ def parse_args():
         "--days",
         type=int,
         default=90,
-        help="How many days of VV online results to crawl (default: 90).",
+        help="How many days of VV online, paper, and premier results to crawl (default: 90).",
     )
     parser.add_argument(
         "--data-dir",
@@ -70,13 +70,13 @@ def main():
 
     cutoff = date.today() - timedelta(days=args.days)
 
-    print("\n[1/4] Crawling VV online tournament results")
+    print("\n[1/4] Crawling VV online, paper, and premier tournament results")
     crawler = VVCrawler()
     results = crawler.crawl(
         cutoff_date=cutoff,
         max_pages=args.max_pages,
     )
-    results_csv = args.data_dir / "vv_online_results.csv"
+    results_csv = args.data_dir / "vv_results.csv"
     write_results_csv(results, results_csv)
     print(f"  {len(results)} tournament deck results -> {results_csv}")
 
@@ -115,7 +115,7 @@ def main():
     (args.app_data_dir / "deck_results.csv").write_bytes(
         (clustering_dir / "deck_clusters.csv").read_bytes()
     )
-    (args.app_data_dir / "vv_online_results.csv").write_bytes(
+    (args.app_data_dir / "vv_results.csv").write_bytes(
         results_csv.read_bytes()
     )
 
