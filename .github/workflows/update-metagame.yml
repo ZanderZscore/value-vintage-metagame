@@ -85,7 +85,7 @@ jobs:
 
           git add \
             app_data/ \
-            data/vv_online_results.csv \
+            data/vv_results.csv \
             data/decks_normalized.json \
             data/deck_cards.csv \
             data/deck_fetch_failures.csv \
@@ -97,6 +97,12 @@ jobs:
           fi
 
           git commit -m "Update Value Vintage metagame data"
+
+          echo "Remaining working-tree changes:"
+          git status --short
+
+          # Discard generated/cache changes that are not part of the commit.
+          git reset --hard HEAD
 
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
